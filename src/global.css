@@ -1,0 +1,33 @@
+/* scrollbar */
+@import 'simplebar-react/dist/simplebar.min.css';
+
+.nav-scroll{
+    overflow: auto;
+    padding-bottom: 100px;
+}
+.css-pwcg7p-MuiCollapse-root{
+    min-height: auto !important;
+}
+.dropcss
+{
+    margin-top: 8px !important;
+}
+.nopage
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.nopagegridtwo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column !important;
+}
+.nopagebutton
+{
+    display: flex;
+    align-items: flex-start !important;
+}

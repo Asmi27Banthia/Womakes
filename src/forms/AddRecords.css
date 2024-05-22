@@ -1,0 +1,41 @@
+.formstart
+{
+    padding: 30px ;
+}
+.editadd
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addeditcancelbtn
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+.downbtn
+{
+    background-color: #1c273c !important;
+    border-radius: 4px;
+    padding: 8px 13px !important;
+    color: #fff !important;
+    width: 100px;
+    border: 1px solid #1c273c;
+}
+.downbtn:hover
+{
+    border: 1px solid #1c273c;
+    width: 103px;
+}
+.addeditbtn
+{
+    margin-left: 10px !important;
+}
+.cancelbtn
+{
+    margin-left: -10px !important;
+   
+}

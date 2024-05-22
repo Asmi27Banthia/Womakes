@@ -1,0 +1,41 @@
+.loginimage
+{
+    background-image: url('../../../public/assets/images/extras/sign_inimagee/63119dbae99fa66193cf2669.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100% !important;
+    width: 100% !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    
+}
+.loginform
+{
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+.loginstack
+{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.loginbox
+{
+    background-image: url('../../../public/assets/images/extras/bg_signin.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.loginmaindiv
+{
+    border-radius: 10px !important;
+    padding-left: 50px;
+    padding-right: 50px;
+}

@@ -1,0 +1,60 @@
+.signinimage
+{
+    background-image: url('../.././public/assets/images/extras/sign_upsidepic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100% !important;
+    width: 100% !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    
+}
+.signinform
+{
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+.signinstack
+{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    
+}
+.signinbox
+{
+    background-image: url('../.././public/assets/images/extras/signupbgseven.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100% !important;
+    width: 100% !important;
+    
+}
+
+.signinmaindiv
+{
+    border-radius: 10px !important;
+    max-width: 950px;
+    margin: auto;
+    
+  
+   
+}
+.sign_name
+{
+    display: flex;
+    width: 100% !important;
+    
+}
+.sign_firstname
+{
+    width: 95% !important;
+}
+.sign_lastname
+{
+    width: 100% !important;
+}
