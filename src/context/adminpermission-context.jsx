@@ -8,38 +8,26 @@ export const AdminPermissionContext = createContext({});
 
 export const adminPermissionProvider = ({ children }) => {
   const [permissionData, setpermissionData] = useState( [
-    { id: 1, name: 'DD', age: '25', joinDate: '2030-02-17', role: 'Admin', email: 'abc@gmail.com' },
+    { id: 1, name: 'DD', path:'./one'},
     {
       id: 2,
       name: 'Asmi',
-      age: '21',
-      joinDate: '2031-06-01',
-      role: 'Developer',
-      email: 'bcd@gmail.com',
+      path:'./two'
     },
     {
       id: 3,
       name: 'Heena',
-      age: '20',
-      joinDate: '2035-04-02',
-      role: 'Tester',
-      email: 'def@gmail.com',
+      path:'./three'
     },
     {
       id: 4,
       name: 'Payal',
-      age: '40',
-      joinDate: '2031-09-09',
-      role: 'Developer',
-      email: 'bcd@gmail.com',
+      path:'./four'
     },
     {
       id: 5,
       name: 'Bansari',
-      age: '30',
-      joinDate: '2035-08-14',
-      role: 'Tester',
-      email: 'def@gmail.com',
+      path:'./five'
     },
   ])
  

@@ -11,6 +11,7 @@ import { useEffect, useState } from 'react';
 import './AddRecords.css'
 import {  useNavigate } from 'react-router-dom';
 import { useAdminPermission } from 'src/hooks/useAdminPermission';
+import MainTextField from './MainTextField';
 
 const style = {
   position: 'absolute',
@@ -34,18 +35,13 @@ const {permissionData,setpermissionData,editData,setEditData}= useAdminPermissio
   
   
   const handleClose = () => {
-    // setOpen(false);
     navigate("/admin/permission")
     setEditData(null);
-    // reset();
   };
 
   const defaultValue = {
     name:  '',
-    age: '',
-    role:'',
-    joinDate:'',
-    email:''
+    path:'./',
 
   };
 
@@ -69,15 +65,9 @@ const {permissionData,setpermissionData,editData,setEditData}= useAdminPermissio
     return defaultValue;
   };
 
-  // useEffect(() => {
-  //   if(editData){
-  //     reset(generateInitialValues());
-  //   }
-  // }, [editData]);
 
   const schema = yup.object().shape({
     name: yup.string().required('Name is required.'),
-    age: yup.string().required('Age is required.'),
   });
 
   const {
@@ -89,7 +79,7 @@ const {permissionData,setpermissionData,editData,setEditData}= useAdminPermissio
     defaultValues: generateInitialValues(),
     mode: 'onsubmit',
     reValidateMode: 'onsubmit',
-    // resolver: yupResolver(schema),
+    resolver: yupResolver(schema),
   });
 console.log('permissionData', permissionData)
 
@@ -131,59 +121,9 @@ console.log('permissionData', permissionData)
       {/* <Button onClick={handleOpen}>Open modal</Button> */}
         <h4 className='editadd'>{editData ? 'Edit record' : 'Add Record'}</h4>
         <form onSubmit={handleSubmit(onsubmit)}>
-            <TextField
-              error={errors?.name}
-              autoFocus
-              margin="dense"
-              label="Name"
-              fullWidth
-              {...register('name')}
-
-              // value={newRecord.name}
-              // onChange={(e) => handleInputChange("name", e.target.value)}
-            />
-            {errors?.name && <p style={{ color: 'red' }}>Name is required</p>}
-            <TextField
-              margin="dense"
-              label="Age"
-              type="number" // Restrict to accept only numbers
-              fullWidth
-              {...register('age')}
-              // value={newRecord.age}
-              // onChange={(e) => handleInputChange("age", e.target.value)}
-            />
-            <TextField
-              margin="dense"
-              label="joinDate"
-              type="date"
-              InputLabelProps={{ shrink: true }}
-              defaultValue={date}
-              InputProps={{
-                inputProps: {
-                  min: '01-01-1999', // Set a minimum date
-                },
-              }}
-              onChange={(e)=>handleChangeDate(e)}
-              fullWidth
-              {...register('joinDate')}
-            />
-
-            <TextField
-              margin="dense"
-              label="Role"
-              fullWidth
-              {...register('role')}
-              // value={newRecord.role}
-              // onChange={(e) => handleInputChange("role", e.target.value)}
-            />
-            <TextField
-              margin="dense"
-              label="Email Address"
-              fullWidth
-              {...register('email')}
-              // value={newRecord.email}
-              // onChange={(e) => handleInputChange("email", e.target.value)}
-            />
+        <MainTextField label={'Name'} name={'name'} register={register} error={errors?.name} />
+        <MainTextField label={'Path'} name={'path'} register={register} />
+            
           <Grid className='addeditcancelbtn'>
             <Button onClick={handleClose} color="primary" className='downbtn cancelbtn'>
               Cancel

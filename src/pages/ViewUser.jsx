@@ -7,7 +7,7 @@ const StyledContainer = styled(Container)({
   marginTop: '2rem',
   marginBottom: '2rem',
   padding: '1rem',
-  boxShadow: '0px 0px 93px -25px rgba(0,0,0,0.75)',
+  boxShadow: '2px 0px 14px 3px rgba(0,0,0,0.75);',
   borderRadius: '8px',
 });
 

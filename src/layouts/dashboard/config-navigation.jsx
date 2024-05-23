@@ -69,7 +69,7 @@ const navConfig = [
     title: 'Product',
     path: '/product',
     icon: icon('reporting'),
-    toolTip: 'Reporting Tool And Analytics',
+    // toolTip: 'Reporting Tool And Analytics',
   },
 
   {
@@ -77,7 +77,7 @@ const navConfig = [
     path: '/productstock',
     icon: icon('consider'),
     // icon: icon('ic_lock'),
-    toolTip: 'Repair Order And Billing Estimates',
+    // toolTip: 'Repair Order And Billing Estimates',
   },
   {
     title: 'Product Stock Request',

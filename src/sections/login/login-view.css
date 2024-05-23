@@ -1,5 +1,4 @@
-.loginimage
-{
+.loginimage {
     background-image: url('../../../public/assets/images/extras/sign_inimagee/63119dbae99fa66193cf2669.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,33 +8,56 @@
     border-bottom-left-radius: 20px !important;
     border-top-right-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
-    
-}
-.loginform
-{
+  }
+  
+  .loginform {
     border-top-right-radius: 20px !important;
     border-bottom-right-radius: 20px !important;
     border-top-left-radius: 0px !important;
     border-bottom-left-radius: 0px !important;
-}
-.loginstack
-{
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .loginstack {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-}
-.loginbox
-{
+    height: 100vh;
+  }
+  
+  .loginbox {
     background-image: url('../../../public/assets/images/extras/bg_signin.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100% !important;
     width: 100% !important;
-}
-
-.loginmaindiv
-{
+  }
+  
+  .loginmaindiv {
     border-radius: 10px !important;
-    padding-left: 50px;
-    padding-right: 50px;
-}
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 900px) {
+    .loginmaindiv {
+      padding: 20px 10px;
+    }
+  
+    .loginimage {
+      display: none !important;
+    }
+  
+    .loginform {
+      border-radius: 20px !important;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .loginmaindiv {
+      padding: 10px 5px;
+    }
+  }
+  

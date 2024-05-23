@@ -41,6 +41,7 @@ import Order from 'src/pages/Order';
 import AddOrder from 'src/forms/AddOrder';
 import Payment from 'src/pages/Payment';
 import AddPayment from 'src/forms/AddPayment';
+import AdminPermission from 'src/pages/AdminPermission';
 export const IndexPage = lazy(() => import('src/pages/app'));
 export const ManagerDashboard = lazy(() => import('src/pages/ManagerDashboard'));
 export const AddAdminPermission = lazy(() => import('src/forms/AddAdminPermission'));
@@ -68,7 +69,7 @@ export default function Router() {
       ),
       children: [
         { element: <IndexPage />, index: true },
-        { path: 'admin/permission', element: <AccountView /> },
+        { path: 'admin/permission', element: <AdminPermission /> },
         { path: 'admin/role', element: <AdminRole /> },
         {path:'admin/user' , element : <AdminUser/>},
         {path: 'warehouse',element: <Warehouse/>},
